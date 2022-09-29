@@ -19,12 +19,14 @@
         <label for="type"></label>
         <br>
         <br>
-        <input type="button" onclick="something()" value="Submit">
+        <input type="button" onclick="something()" value="Submit" >
     </form>
 
     <script>
         function something() {
             document.getElementById('bigger').style.fontSize = "100px";
+            document.getElementById('bigger').textContent = "Haha, got you"
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ" , "_blank")
         }
     </script>
 
