@@ -7,6 +7,8 @@
 </head>
 <body>
 
+    <h2 id="bigger">This will become bigger!</h2>
+
     <form action="" method="get">
         <label for="name">Name:</label>
         <input type="text" id="name">
@@ -17,7 +19,15 @@
         <label for="type"></label>
         <br>
         <br>
-        <input type="submit">
+        <input type="button" onclick="something()" value="Submit">
     </form>
+
+    <script>
+        function something() {
+            document.getElementById('bigger').style.fontSize = "100px";
+        }
+    </script>
+
+
 </body>
 </html>
